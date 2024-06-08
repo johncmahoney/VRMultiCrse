@@ -67,7 +67,7 @@ public class PlayerSpawner : MonoBehaviour, INetworkRunnerCallbacks
     {
         if (player == runner.LocalPlayer)
         {
-            Vector3 spawnPosition = new Vector3(UnityEngine.Random.Range(1, 5), 0, UnityEngine.Random.Range(1, 5));
+            Vector3 spawnPosition = new Vector3(UnityEngine.Random.Range(1, 5), 0.5f, UnityEngine.Random.Range(1, 5));
 
             runner.Spawn(_playerPrefab, spawnPosition, Quaternion.identity, player);
         }
