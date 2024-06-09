@@ -414,6 +414,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3488172028110161117}
   - component: {fileID: 5532098491821152555}
+  - component: {fileID: 1090822920781608340}
+  - component: {fileID: 2734727161958330687}
   m_Layer: 0
   m_Name: XRRig
   m_TagString: Untagged
@@ -454,6 +456,41 @@ MonoBehaviour:
   m_TrackingOriginMode: 1
   m_TrackingSpace: 0
   m_CameraYOffset: 1.36144
+--- !u!143 &1090822920781608340
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6655576414194372010}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &2734727161958330687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6655576414194372010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16880ee9b3482804ca2e1232c4bfae58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementSpeed: 10
+  RotationSpeed: 1
+  _headTransform: {fileID: 8081680925085911833}
+  _moveInput: {fileID: -2741411697157591533, guid: 52475ba1c5fd2d643a9e3d991e93bc78, type: 3}
+  _rotateInput: {fileID: -4179967127338361234, guid: 52475ba1c5fd2d643a9e3d991e93bc78, type: 3}
 --- !u!1 &6752040791858293706
 GameObject:
   m_ObjectHideFlags: 0
