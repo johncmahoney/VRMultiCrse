@@ -416,6 +416,7 @@ GameObject:
   - component: {fileID: 5532098491821152555}
   - component: {fileID: 1090822920781608340}
   - component: {fileID: 2734727161958330687}
+  - component: {fileID: 5756873142734906596}
   m_Layer: 0
   m_Name: HardwareRig
   m_TagString: Untagged
@@ -491,6 +492,23 @@ MonoBehaviour:
   _headTransform: {fileID: 8081680925085911833}
   _moveInput: {fileID: -2741411697157591533, guid: 52475ba1c5fd2d643a9e3d991e93bc78, type: 3}
   _rotateInput: {fileID: 4069312875778167357, guid: 52475ba1c5fd2d643a9e3d991e93bc78, type: 3}
+--- !u!114 &5756873142734906596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6655576414194372010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2059ec3fa4c39d04f899c6a05ef050ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _characterTransform: {fileID: 3488172028110161117}
+  _headTransform: {fileID: 8081680925085911833}
+  _bodyTransform: {fileID: 5126970679797850076}
+  _leftHandTransform: {fileID: 4446119733055954848}
+  _rightHandTransform: {fileID: 3730419760603985343}
 --- !u!1 &6752040791858293706
 GameObject:
   m_ObjectHideFlags: 0

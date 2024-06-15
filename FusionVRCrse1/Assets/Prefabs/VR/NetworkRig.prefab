@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 7671580841083827469}
   - component: {fileID: 6498529368496624387}
   - component: {fileID: 7430058837933789092}
+  - component: {fileID: 5108742369927397488}
   m_Layer: 0
   m_Name: NetworkRig
   m_TagString: Untagged
@@ -218,6 +219,7 @@ MonoBehaviour:
   NestedObjects: []
   NetworkedBehaviours:
   - {fileID: 7430058837933789092}
+  - {fileID: 5108742369927397488}
   - {fileID: 5616894139035500688}
   - {fileID: 2320980259813605299}
   - {fileID: 2807239304475870425}
@@ -238,6 +240,24 @@ MonoBehaviour:
   SyncParent: 0
   _autoAOIOverride: 1
   DisableSharedModeInterpolation: 0
+--- !u!114 &5108742369927397488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034230785708198273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77a5a3c046695e4d824d3c6e3548de7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _headVisuals: {fileID: 2925764768739073190}
+  _characterTransform: {fileID: 7430058837933789092}
+  _headTransform: {fileID: 5616894139035500688}
+  _bodyTransform: {fileID: 2476511175865801713}
+  _leftHandTransform: {fileID: 2807239304475870425}
+  _rightHandTransform: {fileID: 2320980259813605299}
 --- !u!1 &2141005735695907031
 GameObject:
   m_ObjectHideFlags: 0
