@@ -5,6 +5,7 @@ using Fusion;
 using System.Threading.Tasks;
 using Fusion.Sockets;
 using System;
+using UnityEngine.SceneManagement;
 
 public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
 {
@@ -34,6 +35,28 @@ public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
         SessionRunner.AddCallbacks(this);
     }
 
+    public async void StartSharedSession()
+    {
+        // Create Runner
+        CreateRunner();
+
+        // Load Scene
+        await LoadScene();
+
+        // Connect to Session
+        await Connect();
+    }
+
+    public async Task LoadScene()
+    {
+        AsyncOperation asyncLoad =  SceneManager.LoadSceneAsync(1);
+
+        while (!asyncLoad.isDone)
+        {
+            await Task.Yield();
+        }
+    }
+
     private async Task Connect()
     {
         var args = new StartGameArgs()
@@ -60,9 +83,7 @@ public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
     // Start is called before the first frame update
     async void Start()
     {
-        CreateRunner();
-
-        await Connect();
+        StartSharedSession();
     }
 
     // Update is called once per frame
