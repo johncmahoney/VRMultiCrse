@@ -74,45 +74,6 @@
             ]
         },
         {
-            "name": "RightHand_Controller",
-            "id": "75812dd2-b502-4d7a-9d1c-663914538ca1",
-            "actions": [
-                {
-                    "name": "Rotate",
-                    "type": "PassThrough",
-                    "id": "d8c3c3b5-94be-4f93-a8e3-cf2417e87772",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "eca920ba-963a-45b6-a6e2-a6918d6c9d5c",
-                    "path": "<XRController>{RightHand}/thumbstick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Rotate",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "37a20477-c892-4a28-9494-09d25246a1f9",
-                    "path": "<Mouse>/delta",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Rotate",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
             "name": "LeftHand_Controller",
             "id": "a8d4edb1-aa0a-4e16-9624-2b762b62e292",
             "actions": [
@@ -192,6 +153,45 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "RightHand_Controller",
+            "id": "a30fb2c5-74a9-4d10-9f9b-610131a5f337",
+            "actions": [
+                {
+                    "name": "Rotate",
+                    "type": "PassThrough",
+                    "id": "8ffedbfc-9f98-45cb-b031-a274ab41109a",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ed9cb3db-b5d6-4555-84eb-6833118accba",
+                    "path": "<XRController>{RightHand}/thumbstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "dcf29e0f-30be-4138-a627-65bfeab888cf",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

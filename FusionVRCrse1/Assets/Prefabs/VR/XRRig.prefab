@@ -490,7 +490,7 @@ MonoBehaviour:
   RotationSpeed: 1
   _headTransform: {fileID: 8081680925085911833}
   _moveInput: {fileID: -2741411697157591533, guid: 52475ba1c5fd2d643a9e3d991e93bc78, type: 3}
-  _rotateInput: {fileID: -4179967127338361234, guid: 52475ba1c5fd2d643a9e3d991e93bc78, type: 3}
+  _rotateInput: {fileID: 4069312875778167357, guid: 52475ba1c5fd2d643a9e3d991e93bc78, type: 3}
 --- !u!1 &6752040791858293706
 GameObject:
   m_ObjectHideFlags: 0

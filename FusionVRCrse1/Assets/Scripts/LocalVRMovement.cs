@@ -14,7 +14,6 @@ public class LocalVRMovement : MonoBehaviour
     [SerializeField]
     private Transform _headTransform;
     
-
     [SerializeField]
     private InputActionReference _moveInput;
 
@@ -64,7 +63,7 @@ public class LocalVRMovement : MonoBehaviour
     private void Rotate()
     {
         Vector2 rotation = _rotateInput.action.ReadValue<Vector2>();
-        transform.rotation = Quaternion.Euler(new Vector3(0, transform.rotation.eulerAngles.y * rotation.x, 0) * RotationSpeed);
+        transform.rotation = Quaternion.Euler(new Vector3(0, transform.rotation.eulerAngles.y + rotation.x, 0) * RotationSpeed);
     }
 
     private void Gravity()
@@ -75,7 +74,7 @@ public class LocalVRMovement : MonoBehaviour
         }
         else
         {
-            _gravity -= Time.deltaTime;
+            _gravity -= 9.81f * Time.deltaTime;
             _characterController.Move(new Vector3(0, _gravity, 0));
         }
     }
