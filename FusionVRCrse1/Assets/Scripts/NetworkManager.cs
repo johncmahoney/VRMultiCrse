@@ -81,9 +81,9 @@ public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
 
 
     // Start is called before the first frame update
-    async void Start()
+    private void Start()
     {
-        StartSharedSession();
+        //StartSharedSession();
     }
 
     // Update is called once per frame
